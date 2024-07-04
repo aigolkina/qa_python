@@ -12,7 +12,7 @@ class TestBooksCollector:
             'Три богатыря'
         ]
     )
-    def test_add_new_book_add_two_books(self, name):
+    def test_add_new_book_add_one_books(self, name):
         collector = BooksCollector()
 
         collector.add_new_book(name)
@@ -90,7 +90,7 @@ class TestBooksCollector:
 
         assert len(collector.favorites) == 0
 
-    def test_get_list_of_favorites_books_two_favorites(self):
+    def test_get_list_of_favorites_books_list_two_favorites(self):
         collector = BooksCollector()
 
         collector.add_new_book('Гордость и предубеждение и зомби')
